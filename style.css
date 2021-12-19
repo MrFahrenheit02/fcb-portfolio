@@ -1,0 +1,71 @@
+/*
+ * CSS Syntax
+ * CSS [Property]: [Value];
+ */
+
+/* 
+ * The asterisk (*) is known as the 
+ * CSS universal selectors. It is used
+ * to select all the elements on the page.
+ */
+
+* {
+	/* Sans-serif is a back-up font, in case Roboto is not working */
+	font-family: "Roboto", sans-serif;
+}
+
+/* h1 and h2 will override general (*) 		*/
+/* Specific tags (e.g., h1 and h2) will be of higher priority */
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Pixel is an absolute unit of measurement */
+img {
+	height: 250px;
+	width: 250px;
+}
+
+/* vh (viewport height) is a relative unit of measurement */
+#landing {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 6px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	color: #007BFF;
+}
+
+.tools {
+	padding: 25px;
+	height: 200px;
+	margin: 20px;
+	width: 75%;
+	border: 5px solid #F2F2F2;
+	color: white;
+}
+
+html {
+	scroll-behavior: smooth;
+}
